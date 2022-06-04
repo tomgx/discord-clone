@@ -9,3 +9,13 @@
     @apply font-[Abel];
   }
 }
+
+.hoverIcon {
+  border-radius: 50%;
+  transition: 300ms ease-out; 
+}
+
+.hoverIcon:hover {
+  border-radius: 35%;
+  transition: 300ms ease-in; 
+}
