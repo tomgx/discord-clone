@@ -12,10 +12,15 @@
 
 .hoverIcon {
   border-radius: 50%;
-  transition: 300ms ease-out; 
+  transition: 200ms ease-out; 
 }
 
 .hoverIcon:hover {
   border-radius: 35%;
-  transition: 300ms ease-in; 
+  transition: 200ms ease-in; 
+}
+
+.dropDown {
+  transform: translate(0,100);
+  transition: 200ms ease-out; 
 }
