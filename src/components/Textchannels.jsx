@@ -21,12 +21,26 @@ const Textchannels = () => {
             </h1>
             <div className='py-1'>
                 {toggle ?
+                <div>
                     <div className='cursor-pointer absolute left-2 h-[26px] w-[205px] bg-[#a3a3a352] rounded-sm'>
+
                         <HiHashtag style={{ color: '#eee' }} className='absolute top-[4.5px] left-[4px]' />
                         <h1 className='absolute left-[20px] font-medium text-[#eee]'>
                             general
                         </h1>
-                    </div> : null}
+                    <div className='absolute top-[28px] hover:bg-[#a3a3a352] h-[26px] w-[205px] rounded-sm'>
+                    <HiHashtag style={{ color: '#eee' }} className='absolute top-[4.5px] left-[4px]'/>
+                    <h1 className='absolute left-[20px] top-0 font-medium text-[#eee]'>
+                        media
+                    </h1>
+                    </div>
+                    </div> 
+                    </div>
+                    
+
+                
+
+                    : null}
             </div>
         </div>
     )

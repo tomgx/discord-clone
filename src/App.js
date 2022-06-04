@@ -1,6 +1,7 @@
 import Channelbar from "./components/Channelbar";
 import Topbar from "./components/Topbar";
 import Textchannels from "./components/Textchannels";
+import Profile from "./components/Profile";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Topbar />
       <Channelbar />
       <Textchannels />
+      <Profile />
 
     </div>
   );
