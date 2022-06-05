@@ -1,8 +1,8 @@
-import Channelbar from "./components/Channelbar";
-import Topbar from "./components/Topbar";
-import Textchannels from "./components/Textchannels";
+import Channelbar from "./components/ChannelBar";
+import Topbar from "./components/TopBar";
+import Textchannels from "./components/TextChannels";
 import Profile from "./components/Profile";
-
+import ChatArea from "./components/ChatArea";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Channelbar />
       <Textchannels />
       <Profile />
-
+      <ChatArea />
     </div>
   );
 }
