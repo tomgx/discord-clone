@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 @layer base {
   body {
@@ -12,10 +12,24 @@
 
 .hoverIcon {
   border-radius: 50%;
-  transition: 200ms ease-out; 
+  transition: 200ms ease-out;
 }
 
 .hoverIcon:hover {
   border-radius: 35%;
-  transition: 200ms ease-in; 
+  transition: 200ms ease-in;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(29, 29, 29);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #131313;
+  border-radius: 30px;
 }
