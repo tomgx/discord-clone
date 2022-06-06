@@ -33,3 +33,13 @@
   background: #131313;
   border-radius: 30px;
 }
+
+.changeColor {
+  color: #adadad;
+  transition: 300ms;
+}
+
+.changeColor:hover {
+  color: #eee;
+  transition: 300ms;
+}
