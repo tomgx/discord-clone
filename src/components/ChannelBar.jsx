@@ -16,7 +16,7 @@ const Channelbar = () => {
         onClick={handleClick}
         style={{ backgroundColor: toggle ? "#282b30" : "#6d6d6d2d" }}
       >
-        <h1 className="font-bold text-[#eee] py-2 pl-4 hover:bg-[#6d6d6d2d] rounded-l">
+        <h1 className="font-bold text-[#eee] py-2 pl-4 hover:bg-[#6d6d6d2d] duration-300 rounded-l">
           More Information
           {toggle ? (
             <IoIosArrowDown
@@ -32,10 +32,10 @@ const Channelbar = () => {
         </h1>
 
         {toggle ? null : (
-          <div className="z-50 bg-[#111111] h-[230px] w-[200px] absolute top-[48px] left-[10px] rounded-lg dropDown">
+          <div className="z-50 bg-[#111111] h-[230px] w-[200px] absolute top-[48px] left-[10px] rounded-lg">
             <ul className="flex justify-center py-2">
               <a href="https://github.com/tomgx">
-                <li className="text-[#eee] w-[180px] px-3 py-2 hover:bg-[#5865F2] rounded-lg">
+                <li className="text-[#eee] w-[180px] px-3 py-2 hover:bg-[#5865F2] duration-300 rounded-lg">
                   Github Profile
                   <FaGithub className="absolute top-5 right-6" />
                 </li>

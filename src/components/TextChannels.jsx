@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import { HiHashtag } from "react-icons/hi";
 
 const Textchannels = () => {
@@ -17,9 +17,9 @@ const Textchannels = () => {
       >
         TEXT CHANNELS
         {toggle ? (
-          <IoIosArrowDown className="rotateArrow absolute top-[21px] left-[8px]" />
+          <IoIosArrowDown className="duration-300 absolute top-[21px] left-[8px]" />
         ) : (
-          <IoIosArrowForward className="absolute top-[21px] left-[8px]" />
+          <IoIosArrowDown className="-rotate-90 duration-300 absolute top-[21px] left-[8px]" />
         )}
       </h1>
       <div className="py-1">
@@ -33,7 +33,7 @@ const Textchannels = () => {
               <h1 className="absolute left-[20px] font-medium text-[#eee]">
                 general
               </h1>
-              <div className="absolute top-[28px] hover:bg-[#a3a3a352] h-[26px] w-[205px] rounded-sm">
+              <div className="absolute top-[28px] hover:bg-[#a3a3a352] duration-300 h-[26px] w-[205px] rounded-sm">
                 <HiHashtag
                   style={{ color: "#eee" }}
                   className="absolute top-[4.5px] left-[4px]"

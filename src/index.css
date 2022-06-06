@@ -19,8 +19,3 @@
   border-radius: 35%;
   transition: 200ms ease-in; 
 }
-
-.dropDown {
-  transform: translate(0,100);
-  transition: 200ms ease-out; 
-}
