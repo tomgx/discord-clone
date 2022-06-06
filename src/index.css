@@ -10,6 +10,21 @@
   }
 }
 
+@keyframes bounce1 {
+  0%,
+  100% {
+    transform: translatey(-5%);
+    transition: ease-in;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.moreInfoTransition {
+  animation: bounce1 0.5s;
+}
+
 @keyframes bounce {
   0%,
   100% {

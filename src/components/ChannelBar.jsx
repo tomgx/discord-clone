@@ -32,7 +32,7 @@ const Channelbar = () => {
         </h1>
 
         {toggle ? null : (
-          <div className="z-50 bg-[#111111] h-[260px] w-[220px] absolute top-[58px] left-[10px] rounded-lg">
+          <div className="z-50 bg-[#111111] h-[260px] w-[220px] absolute top-[58px] left-[10px] rounded-lg moreInfoTransition">
             <ul className="flex justify-center py-2">
               <a href="https://github.com/tomgx">
                 <li className="text-[#eee] w-[200px] px-3 py-2 hover:bg-[#5865F2] duration-300 rounded-lg text-lg">
