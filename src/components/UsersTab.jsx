@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCrown, FaRegNewspaper } from "react-icons/fa";
 import Logo from "../assets/profile-pic.jpg";
 
 const UsersTab = () => {
+  const [toggle, setToggle] = useState(true);
+
+  const handleClick = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="select-none bg-[#282b30] fixed top-[74px] right-0 h-full w-[260px] z-10">
       <div>
@@ -11,16 +17,20 @@ const UsersTab = () => {
         </h1>
       </div>
       <div className="flex justify-center">
-        <div className="cursor-pointer hover:bg-[#a3a3a31e] duration-200 absolute top-[45px] h-[50px] w-[240px] rounded">
+        {toggle ? null : (
+          <div className="bg-[#1f1f1f] absolute top-[45px] -left-[290px] h-[400px] w-[280px] rounded-2xl userProfileBounce"></div>
+        )}
+        <div
+          className="cursor-pointer hover:bg-[#a3a3a31e] duration-200 absolute top-[45px] h-[50px] w-[240px] rounded"
+          onClick={handleClick}
+        >
           <div>
             <div className="bg-[#000000] w-[35px] h-[35px] rounded-full absolute top-2 left-2">
-              <a href="https://avatars.githubusercontent.com/u/25938766?v=4">
-                <img
-                  className="cursor-pointer rounded-full shadow-md hover:opacity-70 duration-200 ease-linear"
-                  src={Logo}
-                  alt="profile-pic"
-                />
-              </a>
+              <img
+                className="cursor-pointer rounded-full shadow-md hover:opacity-70 duration-200 ease-linear"
+                src={Logo}
+                alt="profile-pic"
+              />
               <span class="animate-ping absolute inline-flex h-2 w-2 left-7 bottom-1 rounded-full bg-[#0f9e26] opacity-75"></span>
               <span class="absolute inline-flex h-2 w-2 left-7 bottom-1 rounded-full bg-[#0f9e26] opacity-100"></span>
             </div>

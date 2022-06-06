@@ -10,6 +10,21 @@
   }
 }
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translatex(-3%);
+    transition: ease-in;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.userProfileBounce {
+  animation: bounce 0.5s;
+}
+
 .hoverIcon {
   border-radius: 50%;
   transition: 200ms ease-out;
