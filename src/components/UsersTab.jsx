@@ -11,7 +11,7 @@ const UsersTab = () => {
   };
 
   return (
-    <div className="select-none bg-[#282b30] fixed top-[74px] right-0 h-full w-[260px] z-10">
+    <div className="select-none bg-[#282b30] fixed top-[74px] right-0 h-full w-[260px] z-20">
       <div>
         <h1 className="text-[#eee] font-bold text-sm absolute top-6 left-5">
           ONLINE - 1

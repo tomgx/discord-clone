@@ -4,6 +4,7 @@ import Textchannels from "./components/TextChannels";
 import Profile from "./components/Profile";
 import ChatBox from "./components/ChatBox";
 import UsersTab from "./components/UsersTab";
+import MessageArea from "./components/MessageArea";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Profile />
       <UsersTab />
       <ChatBox />
+      <MessageArea />
     </div>
   );
 }

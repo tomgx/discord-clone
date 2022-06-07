@@ -45,7 +45,7 @@ const Topbar = () => {
             </div>
           </li>
         </ul>
-        <div className="h-[50px] w-screen mt-[-128px] ml-[200px] shadow-md">
+        <div className="h-[50px] w-screen mt-[-128px] ml-[200px] shadow-md z-30">
           <div className="absolute top-[36px] left-[330px]  z-50">
             <HiHashtag style={{ color: "#eee" }} className="h-6 w-6" />
             <h1 className="absolute -top-1 left-8 font-semibold text-xl text-[#eee]">
