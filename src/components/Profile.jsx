@@ -7,13 +7,11 @@ const Profile = () => {
   return (
     <div className="select-none absolute bottom-0 left-[72px] h-[50px] w-[240px] bg-[#222224] z-10">
       <div className="bg-[#000000] w-[35px] h-[35px] rounded-full absolute top-2 left-2">
-        <a href="https://avatars.githubusercontent.com/u/25938766?v=4">
-          <img
-            className="cursor-pointer rounded-full shadow-md hover:opacity-70 duration-200 ease-linear"
-            src={Logo}
-            alt="profile-pic"
-          />
-        </a>
+        <img
+          className="cursor-default rounded-full shadow-md hover:opacity-70 duration-200 ease-linear"
+          src={Logo}
+          alt="profile-pic"
+        />
         <span class="animate-ping absolute inline-flex h-2 w-2 left-7 bottom-1 rounded-full bg-[#0f9e26] opacity-75"></span>
         <span class="absolute inline-flex h-2 w-2 left-7 bottom-1 rounded-full bg-[#0f9e26] opacity-100"></span>
       </div>
