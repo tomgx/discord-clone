@@ -4,7 +4,7 @@ import TextareaAutosize from "react-textarea-autosize";
 
 const ChatArea = () => {
   return (
-    <div className="fixed top-[65px] left-[320px] h-full w-screen] min-h-[350px] max-h-screen z-10">
+    <div className="fixed top-[65px] left-[320px] h-full w-screen] min-h-[455px] max-h-screen z-10">
       <div className="absolute bottom-[85px] w-[1300px]">
         <span className="changeColor">
           <div className="absolute bottom-[7px] left-[16px] cursor-pointer px-[13px] py-[10px]">
