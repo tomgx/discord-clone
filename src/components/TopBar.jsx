@@ -28,7 +28,7 @@ const Topbar = () => {
         </h1>
       </div>
 
-      <div className="bg-[#1e2124] w-[75px] h-screen display-block m-0 px-2 py-2 z-50">
+      <div className="bg-[#1e2124] w-[75px] h-screen display-block m-0 px-2 py-2">
         <ul>
           <li className="pb-1">
             <div className="cursor-pointer bg-[#424549] h-14 w-14 rounded-full hoverIcon hover:bg-[#5865F2] flex justify-center items-center">

@@ -73,3 +73,26 @@
   color: #eee;
   transition: 300ms;
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: rgba(26, 26, 26, 0.973);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
