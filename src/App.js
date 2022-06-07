@@ -2,7 +2,7 @@ import Channelbar from "./components/ChannelBar";
 import Topbar from "./components/TopBar";
 import Textchannels from "./components/TextChannels";
 import Profile from "./components/Profile";
-import ChatArea from "./components/ChatArea";
+import ChatBox from "./components/ChatBox";
 import UsersTab from "./components/UsersTab";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Textchannels />
       <Profile />
       <UsersTab />
-      <ChatArea />
+      <ChatBox />
     </div>
   );
 }
