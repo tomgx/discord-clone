@@ -22,14 +22,19 @@ const UsersTab = () => {
           <div className="bg-[#1f1f1f] absolute top-[45px] -left-[290px] h-[400px] w-[280px] rounded-2xl userProfileBounce">
             <div className="bg-[#66fda7] absolute top-0 left-0 h-[60px] w-[280px] rounded-t-2xl"></div>
             <div className="bg-[#1f1f1f] absolute top-5 left-4 h-[80px] w-[80px] rounded-full">
-              <div className="bg-[#000000] w-[70px] h-[70px] rounded-full absolute top-[5px] left-[5px]">
-                <a href="https://avatars.githubusercontent.com/u/25938766?v=4">
-                  <img
-                    className="cursor-pointer rounded-full shadow-md hover:opacity-70 duration-200 ease-linear"
-                    src={Logo}
-                    alt="profile-pic"
-                  />
-                </a>
+              <div className=" bg-[#000000] w-[70px] h-[70px] rounded-full absolute top-[5px] left-[5px]">
+                <div className="w-[70px] h-[70px] rounded-full absolute top-[0px] left-[0px] showOnHover hover:bg-[#0000008a] duration-300 ease-in">
+                  <a href="https://avatars.githubusercontent.com/u/25938766?v=4">
+                    <div className="hide cursor-pointer flex justify-center items-center text-[10px] font-bold">
+                      VIEW PICTURE
+                    </div>{" "}
+                  </a>
+                </div>
+                <img
+                  className="rounded-full shadow-md "
+                  src={Logo}
+                  alt="profile-pic"
+                />
                 <div className="bg-[#1f1f1f] absolute h-5 w-5 top-[50px] left-[52px] rounded-full"></div>
                 <span class="animate-ping absolute inline-flex h-3 w-3 left-14 bottom-1 rounded-full bg-[#0f9e26] opacity-75"></span>
                 <span class="absolute inline-flex h-3 w-3 left-14 bottom-1 rounded-full bg-[#0f9e26] opacity-100"></span>
