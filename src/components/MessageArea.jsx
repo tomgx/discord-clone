@@ -114,11 +114,20 @@ const MessageArea = () => {
           <div id="bigBG" className="fixed h-full w-screen bgOpacity"></div>
           <div className="relative top-[160px] left-[400px] bigImgTransition">
             <ClickAwayListener onClickAway={handleClick}>
-              <img
-                className="select-none cursor-pointer h-[450px] w-[450px] rounded-md"
-                src={Car}
-                alt="car-pic"
-              />
+              <div className="h-[450px] w-[450px]">
+                <img
+                  className="select-none h-[450px] w-[450px] rounded-md"
+                  src={Car}
+                  alt="car-pic"
+                />
+                <div className="w-[90px]">
+                  <a href="https://i.imgur.com/QXKbqZc.jpeg">
+                    <h1 className="cursor-pointer text-[#bebebe] hover:text-[#eee] font-bold">
+                      Open original
+                    </h1>
+                  </a>
+                </div>
+              </div>
             </ClickAwayListener>
           </div>
         </div>
