@@ -11,6 +11,17 @@ const MessageArea = () => {
     setToggle(!toggle);
   };
 
+  var opacity = 0;
+  function MyFadeFunction() {
+    if (opacity < 0.6) {
+      opacity += 0.075;
+      setTimeout(function () {
+        MyFadeFunction();
+      }, 100);
+    }
+    document.getElementById("bigBG").style.opacity = opacity;
+  }
+
   return (
     <div className="fixed top-[74px] left-[312px] h-full w-screen z-0 overflow-y-scroll">
       <div className="absolute top-6 left-6">
@@ -68,7 +79,10 @@ const MessageArea = () => {
               </video>
             </div>
           </li>
-          <li className="hover:bg-[#23263033] h-[260px] w-screen pl-8 -ml-[24px] py-[4.5px]">
+          <li
+            className="hover:bg-[#23263033] h-[260px] w-screen pl-8 -ml-[24px] py-[4.5px]"
+            onClick={MyFadeFunction}
+          >
             <div
               className="cursor-pointer absolute bottom-[24px] left-[72px] rounded-sm h-[200px] w-[200px] z-20"
               onClick={handleClick}
@@ -96,8 +110,9 @@ const MessageArea = () => {
         </ul>
       </div>
       {toggle ? null : (
-        <div className="fixed h-full w-screen bg-[#00000098]">
-          <div className="relative top-[160px] left-[400px]">
+        <div>
+          <div id="bigBG" className="fixed h-full w-screen bgOpacity"></div>
+          <div className="relative top-[160px] left-[400px] bigImgTransition">
             <ClickAwayListener onClickAway={handleClick}>
               <img
                 className="select-none cursor-pointer h-[450px] w-[450px] rounded-md"

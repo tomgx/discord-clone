@@ -39,6 +39,15 @@
   }
 }
 
+.bgOpacity {
+  background: #000000;
+  opacity: 0;
+}
+
+.bigImgTransition {
+  animation: bounce1 0.8s;
+}
+
 .moreInfoTransition {
   animation: bounce1 0.5s;
 }
